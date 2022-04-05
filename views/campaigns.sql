@@ -1,0 +1,2 @@
+CREATE OR REPLACE VIEW campaigns AS
+SELECT "CAMPAIGN".campaign_name FROM "CAMPAIGN";
