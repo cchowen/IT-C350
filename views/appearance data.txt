@@ -1,0 +1,5 @@
+CREATE OR REPLACE VIEW APPEARANCE_DATA AS
+
+SELECT gender, height, weight, age, eye_color, hair_color, skin_color, username, char_name FROM "APPEARANCE"
+INNER JOIN "CHARACTER" on "CHARACTER".appearance_id="APPEARANCE".appearance_id
+INNER JOIN "USER" on "CHARACTER".user_id = "USER".user_id;
